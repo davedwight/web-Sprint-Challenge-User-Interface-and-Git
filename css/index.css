@@ -117,10 +117,43 @@ nav a {
     width: 95%;
 }
 
-
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.middle-content-about {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.card-about {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-bottom: 5%;
+    border-bottom: 1px dashed black;
+}
+
+.card-about h2 {
+    margin: 2% 0;
+}
+
+.card-about p {
+    margin: 3% 0;
+}
+
+.card-about a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 40%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0 4% 0;
 }
 
 .middle-content h2 {
