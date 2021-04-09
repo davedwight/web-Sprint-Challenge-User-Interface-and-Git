@@ -3,258 +3,346 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
-    box-sizing: border-box;
-    max-width: 100%;
-    border: 1px solid grey;
+  box-sizing: border-box;
+  max-width: 100%;
+  /* border: 1px solid grey; */
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: "Rubik", sans-serif;
 }
 
 p {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
 }
 
 header {
-    margin-bottom: 3%; /*Add margin between header and .top-content*/
+  margin-bottom: 3%; /*Add margin between header and .top-content*/
 }
 
 .header-top {
-    display: flex; /*Use flex to position logo and nav bar side by side*/
-    margin-bottom: 3%; /*Add margin between nav bar and header image*/
+  display: flex; /*Use flex to position logo and nav bar side by side*/
+  margin-bottom: 5%; /*Add margin between nav bar and header image*/
+  margin-top: 3%;
 }
 
 .logo-container {
-    display: flex;
-    align-items: flex-end; /*Adding {align-items: flex-end} to both the image and nav items to match bottom alignment */
-    width: 22%; /*Using width of 22% and nav bar width of 78% to keep logo the desired size while also expanding the sum width of both elements to take up the full width of the parent element */
+  display: flex;
+  align-items: flex-end; /*Adding {align-items: flex-end} to both the image and nav items to match bottom alignment */
+  width: 22%; /*Using width of 22% and nav bar width of 78% to keep logo the desired size while also expanding the sum width of both elements to take up the full width of the parent element */
 }
 
 nav {
-    display: flex;
-    align-items: flex-end;
-    width: 78%;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: flex-end;
+  width: 78%;
+  justify-content: space-evenly;
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+  width: 48%;
+  padding: 0 1%;
+  padding-bottom: 20px;
 }
 
 .top-content .text-container-about {
-    width: 95%;
+  width: 95%;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
 }
 
 /* Styles specific to middle-content of about page start here */
 .middle-content-about {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 .card-about {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    margin-bottom: 5%;
-    border-bottom: 1px dashed black;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 5%;
+  border-bottom: 1px dashed black;
 }
 
 .card-about h2 {
-    margin: 2% 0;
+  margin: 2% 0;
 }
 
 .card-about p {
-    margin: 3% 0;
+  margin: 3% 0;
 }
 
 .card-about a {
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 40%;
-    padding: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2% 0 4% 0;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 40%;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0 4% 0;
 }
 /* Styles specific to middle-content of about page end here */
 
-
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+  padding: 0 2%;
+  margin-bottom: 0;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    /* Commenting out background-color of box. Other option is to select each box more specifically, but commenting out and targeting each box with ".box1, .box2, etc allows for shorter targeting for each individual box */
-    /* background: black; */
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 12.5%;
+  height: 100px;
+  /* Commenting out background-color of box. Other option is to select each box more specifically, but commenting out and targeting each box with ".box1, .box2, etc allows for shorter targeting for each individual box */
+  /* background: black; */
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box1 {
-    background-color: teal;
+  background-color: teal;
+  order: -1; /*Adding flex-item property to order .box1 first in the displayed flexbox even though in the html it is last. Best practice in this situation would be to simply put .box1 first in the html, but I'm using order to show understanding of this flex-item property*/
 }
 
 .box2 {
-    background-color: gold;
+  background-color: gold;
 }
 
 .box3 {
-    background-color: cadetblue;
+  background-color: cadetblue;
 }
 
 .box4 {
-    background-color: coral;
+  background-color: coral;
 }
 
 .box5 {
-    background-color: crimson;
+  background-color: crimson;
 }
 
 .box6 {
-    background-color: forestgreen;
+  background-color: forestgreen;
 }
 
 .box7 {
-    background-color: darkorchid;
+  background-color: darkorchid;
 }
 
 .box8 {
-    background-color: hotpink;
+  background-color: hotpink;
 }
 
 .box9 {
-    background-color: indigo;
+  background-color: indigo;
 }
 
 .box10 {
-    background-color: dodgerblue;
+  background-color: dodgerblue;
 }
 
 .bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+  display: flex;
+  margin: 0 2% 20px;
+  justify-content: space-around;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+  padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 .bottom-content-about {
-    margin-top: 2%;
+  margin-top: 1%;
+  margin-bottom: 4%;
 }
 
 footer {
-    width: 100%;
-    background: black;
+  width: 100%;
+  background: black;
 }
 
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 14px;
 }
 
 footer nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
