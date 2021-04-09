@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,6 +48,8 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width: 100%;
+    border: 1px solid grey;
 }
 
 html, body {
@@ -69,6 +70,33 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+header {
+    margin-bottom: 3%; /*Add margin between header and .top-content*/
+}
+
+.header-top {
+    display: flex; /*Use flex to position logo and nav bar side by side*/
+    margin-bottom: 3%; /*Add margin between nav bar and header image*/
+}
+
+.logo-container {
+    display: flex;
+    align-items: flex-end; /*Adding {align-items: flex-end} to both the image and nav items to match bottom alignment */
+    width: 22%; /*Using width of 22% and nav bar width of 78% to keep logo the desired size while also expanding the sum width of both elements to take up the full width of the parent element */
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    width: 78%;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
 }
 
 .top-content {
