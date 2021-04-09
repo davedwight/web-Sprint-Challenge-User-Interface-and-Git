@@ -113,6 +113,11 @@ nav a {
     padding-bottom: 20px;  
 }
 
+.top-content .text-container-about {
+    width: 95%;
+}
+
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
