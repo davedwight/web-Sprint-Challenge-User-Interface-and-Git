@@ -122,6 +122,7 @@ nav a {
     border-bottom: 1px dashed black;
 }
 
+/* Styles specific to middle-content of about page start here */
 .middle-content-about {
     display: flex;
     flex-flow: row wrap;
@@ -155,6 +156,8 @@ nav a {
     align-items: center;
     margin: 2% 0 4% 0;
 }
+/* Styles specific to middle-content of about page end here */
+
 
 .middle-content h2 {
     padding: 0 2%;
@@ -231,6 +234,10 @@ nav a {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.bottom-content-about {
+    margin-top: 2%;
 }
 
 footer {
